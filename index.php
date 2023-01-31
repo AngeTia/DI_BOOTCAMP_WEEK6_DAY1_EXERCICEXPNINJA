@@ -10,7 +10,8 @@
         <form action="confirmForm.php" method="post">
             <p>First name: <input type="text" name="firstname" required/></p>
             <label for="color"> Color :</label>
-            <select name="color">
+            <select name="color" required>
+                <option value="">Choix de la couleur</option>
                 <option value="Blue">Blue</option>
                 <option value="Red">Red</option>
                 <option value="Green">Green</option>
