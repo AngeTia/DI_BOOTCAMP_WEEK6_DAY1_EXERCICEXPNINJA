@@ -8,7 +8,7 @@
     </head>
     <body>
         <form action="confirmForm.php" method="post">
-            <p>First name: <input type="text" name="firstname" /></p>
+            <p>First name: <input type="text" name="firstname" required/></p>
             <label for="color"> Color :</label>
             <select name="color">
                 <option value="Blue">Blue</option>
