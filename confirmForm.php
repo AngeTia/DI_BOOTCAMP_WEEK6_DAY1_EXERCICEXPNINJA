@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>array to string</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-    </head>
-    <body>
-        <?php
-            echo("Your name is : " . $_POST['firstname'] . "<br>");
-            echo("Your color is : " . $_POST['color'] . "<br>");
-        ?>
-    </body>
-</html>
+<?php
+if (isset($_POST['submit'])) {
+    if (!empty($_POST['check_list'])) {
+        // Counting number of checked checkboxes.
+        $checked_count = count($_POST['check_list']);
+        $name = $_POST['username'];
+        echo $name . " 's favourite colors are " . $checked_count . " option(s): <br/>";
+        // Loop to store and display values of individual checked checkbox.
+        foreach ($_POST['check_list'] as $selected) {
+            echo "<p>" . $selected . "</p>";
+        }
+    } else {
+        echo "<b>Please Select Atleast One Option.</b>";
+    }
+}

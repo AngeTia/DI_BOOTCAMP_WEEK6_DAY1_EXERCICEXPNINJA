@@ -1,22 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exercise_Ninja</title>
+        <title>
+            Exercice XP NINJA
+        </title>
     </head>
     <body>
         <form action="confirmForm.php" method="post">
-            <p>First name: <input type="text" name="firstname" required/></p>
-            <label for="color"> Color :</label>
-            <select name="color" required>
-                <option value="">Choix de la couleur</option>
-                <option value="Blue">Blue</option>
-                <option value="Red">Red</option>
-                <option value="Green">Green</option>
-            </select>
-            <input type="submit" name="submit" value="Submit" />
-        </form>    
+            Username: <input type="text" name="username" placeholder="enter name" required/><br/><br/>
+            Select your favourite colors:<br/>
+            Red<input type="checkbox" name="check_list[]" value="red"/><br/>
+            Blue<input type="checkbox" name="check_list[]" value="blue"/><br/>
+            Green<input type="checkbox" name="check_list[]" value="green"/><br/>
+            Yellow<input type="checkbox" name="check_list[]" value="yellow"/><br/>
+            Pink<input type="checkbox" name="check_list[]" value="pink"/><br/>
+            Black<input type="checkbox" name="check_list[]" value="black"/><br/>
+            White<input type="checkbox" name="check_list[]" value="white"/><br/><br/>
+            <input type="submit" name="submit" value="Submit"/><br/>
+        </form>
     </body>
 </html>
